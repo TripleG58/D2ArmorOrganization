@@ -60,21 +60,25 @@
 
 ## hunter
 - helmet
-  - 10 res & 20 rec
-    - disc spike (30)
-    - str spike (30)
+  - 30 disc
+    - 30 mob
+    - 30 res
+    - 30 rec
 - arms
-  - 10 res & 20 rec
-    - disc spike (30)
-    - str spike (30)
+  - 30 disc
+    - 30 mob
+    - 30 res
+    - 30 rec
 - chest
-  - 10 res & 20 rec
-    - disc spike (30)
-    - str spike (30)
+  - 30 disc
+    - 30 mob
+    - 30 res
+    - 30 rec
 - legs
-  - 10 res & 20 rec
-    - disc spike (30)
-    - str spike (30)
+  - 30 disc
+    - 30 mob
+    - 30 res
+    - 30 rec
 - class
 - raid sets
   - vault of glass
