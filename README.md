@@ -3,20 +3,20 @@
 ## warlock
 - helmet
   - 10 res & 20 rec
-    - disc spike (30)
-    - str spike (30)
+    - 30 disc
+    - 30 str
 - arms
   - 10 res & 20 rec
-    - disc spike (30)
-    - str spike (30)
+    - 30 disc
+    - 30 str
 - chest
   - 10 res & 20 rec
-    - disc spike (30)
-    - str spike (30)
+    - 30 disc
+    - 30 str
 - legs
   - 10 res & 20 rec
-    - disc spike (30)
-    - str spike (30)
+    - 30 disc
+    - 30 str
 - class
 - raid sets
   - vault of glass
@@ -32,20 +32,20 @@
 ## titan
 - helmet
   - 20 res & 10 rec
-    - disc spike (30)
-    - str spike (30)
+    - 30 disc
+    - 30 str
 - arms
   - 20 res & 10 rec
-    - disc spike (30)
-    - str spike (30)
+    - 30 disc
+    - 30 str
 - chest
   - 20 res & 10 rec
-    - disc spike (30)
-    - str spike (30)
+    - 30 disc
+    - 30 str
 - legs
   - 20 res & 10 rec
-    - disc spike (30)
-    - str spike (30)
+    - 30 disc
+    - 30 str
 - class
 - raid sets
   - vault of glass
