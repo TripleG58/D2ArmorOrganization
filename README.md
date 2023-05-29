@@ -1,5 +1,17 @@
 # philosophy
 
+## artifice (preface)
+
+factor artifice in before applying this philosophy
+
+i.e.) 10 res, 20 rec, 20 disc + artifice satisfies 23 disc requirement (22.5 b/c class item mw +2)
+
+_could_ use 22 minimum with at least _one_ artifice slot dedicated to disc, then, could let one slip to 21
+
+lots of other artifice combos, but you can see how they need to be factored in to base stats _before_ referencing this philosophy
+
+the +/- 15 artifice bonus (with all 5 pieces) won't allow for any armor pieces to satisfy multiple requirements here that I'm aware, but I didn't do all the math involved in making that determination
+
 ## pvp
 
 pretty much just want one iron banner set for each character for extra prisms
@@ -66,6 +78,11 @@ allows mix & match of double 70s in two base stats of upper trinity supplementin
   - root of nightmares
 ### pvp
 - iron banner
+  - helmet
+  - arms
+  - chest
+  - legs
+  - class
   
 ## titan
 - helmet
@@ -95,6 +112,11 @@ allows mix & match of double 70s in two base stats of upper trinity supplementin
   - root of nightmares
 ### pvp
 - iron banner
+  - helmet
+  - arms
+  - chest
+  - legs
+  - class
 
 ## hunter
 - helmet
@@ -128,3 +150,8 @@ allows mix & match of double 70s in two base stats of upper trinity supplementin
   - root of nightmares
 ### pvp
 - iron banner
+  - helmet
+  - arms
+  - chest
+  - legs
+  - class
