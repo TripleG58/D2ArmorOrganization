@@ -56,23 +56,19 @@ allows mix & match of double 70s in two base stats of upper trinity supplementin
 
 # categories
 
-## warlock
+## warlock - 10 res & 20 rec
 - helmet
-  - 10 res & 20 rec
-    - 23 disc
-    - 23 str (niche)
+  - 23 disc
+  - 23 str (niche)
 - arms
-  - 10 res & 20 rec
-    - 23 disc
-    - 23 str (niche)
+  - 23 disc
+  - 23 str (niche)
 - chest
-  - 10 res & 20 rec
-    - 23 disc
-    - 23 str (niche)
+  - 23 disc
+  - 23 str (niche)
 - legs
-  - 10 res & 20 rec
-    - 23 disc 
-    - 23 str (niche)
+  - 23 disc 
+  - 23 str (niche)
 - class
 - raid sets
   - vault of glass
@@ -125,23 +121,19 @@ allows mix & match of double 70s in two base stats of upper trinity supplementin
   - legs
   - class
   
-## titan
+## titan - 20 res & 10 rec
 - helmet
-  - 20 res & 10 rec
-    - 23 disc 
-    - 23 str
+  - 23 disc 
+  - 23 str
 - arms
-  - 20 res & 10 rec
-    - 23 disc 
-    - 23 str
+  - 23 disc 
+  - 23 str
 - chest
-  - 20 res & 10 rec
     - 23 disc 
     - 23 str
 - legs
-  - 20 res & 10 rec
-    - 23 disc 
-    - 23 str
+  - 23 disc 
+  - 23 str
 - class
 - raid sets
   - vault of glass
@@ -194,27 +186,23 @@ allows mix & match of double 70s in two base stats of upper trinity supplementin
   - legs
   - class
 
-## hunter
+## hunter - 23 disc
 - helmet
-  - 23 disc
-    - 30 mob
-    - 30 res
-    - 30 rec
+  - 30 mob
+  - 30 res
+  - 30 rec
 - arms
-  - 23 disc
-    - 30 mob
-    - 30 res
-    - 30 rec
+  - 30 mob
+  - 30 res
+  - 30 rec
 - chest
-  - 23 disc
-    - 30 mob
-    - 30 res
-    - 30 rec
+  - 30 mob
+  - 30 res
+  - 30 rec
 - legs
-  - 23 disc
-    - 30 mob
-    - 30 res
-    - 30 rec
+  - 30 mob
+  - 30 res
+  - 30 rec
 - class
 - raid sets
   - vault of glass
