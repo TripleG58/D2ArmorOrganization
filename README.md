@@ -1,4 +1,4 @@
-# Categories
+# categories
 
 ## warlock
 - helmet
