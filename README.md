@@ -1,6 +1,6 @@
 # Categories
 
-- warlock
+## warlock
   - helmet
     - 10 res & 20 rec
       - disc spike (30)
@@ -29,7 +29,7 @@
   - pvp
     - iron banner
   
-- titan
+## titan
   - helmet
     - 20 res & 10 rec
       - disc spike (30)
@@ -58,7 +58,7 @@
   - pvp
     - iron banner
 
-- hunter
+## hunter
   - helmet
     - 10 res & 20 rec
       - disc spike (30)
