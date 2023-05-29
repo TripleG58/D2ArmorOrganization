@@ -76,12 +76,47 @@ allows mix & match of double 70s in two base stats of upper trinity supplementin
 - class
 - raid sets
   - vault of glass
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - kings fall
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - last wish 
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - garden of salvation
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - deep stone crypt
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - vow of the disciple
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - root of nightmares
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
 ### pvp
 - iron banner
   - helmet
@@ -110,12 +145,47 @@ allows mix & match of double 70s in two base stats of upper trinity supplementin
 - class
 - raid sets
   - vault of glass
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - kings fall
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - last wish 
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - garden of salvation
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - deep stone crypt
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - vow of the disciple
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - root of nightmares
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
 ### pvp
 - iron banner
   - helmet
@@ -148,12 +218,47 @@ allows mix & match of double 70s in two base stats of upper trinity supplementin
 - class
 - raid sets
   - vault of glass
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - kings fall
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - last wish 
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - garden of salvation
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - deep stone crypt
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - vow of the disciple
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
   - root of nightmares
+    - helmet
+    - arms
+    - chest
+    - legs
+    - class
 ### pvp
 - iron banner
   - helmet
