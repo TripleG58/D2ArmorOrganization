@@ -12,6 +12,8 @@ lots of other artifice combos, but you can see how they need to be factored in t
 
 the +/- 15 artifice bonus (with all 5 pieces) won't allow for any armor pieces to satisfy multiple requirements here that I'm aware, but I didn't do all the math involved in making that determination
 
+quickly, I suppose it could allow a 23 disc / 7 str armor piece to satisfy both disc & str spike set requirements b/c 7 + 15 = 22 which is saved by class item mw +2, but _all_ the other armor in the set would have to be PERFECT, so I believe, for the sake of one's sanity, that the artifice mod is best used for combatting RNG and only one piece of armor should be used to satisfy the stat requirements of the armor organization philosophy
+
 ## pvp
 
 pretty much just want one iron banner set for each character for extra prisms
