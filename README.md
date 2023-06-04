@@ -14,6 +14,37 @@ the +/- 15 artifice bonus (with all 5 pieces) won't allow for any armor pieces t
 
 quickly, I suppose it could allow a 23 disc / 7 str armor piece to satisfy both disc & str spike set requirements b/c 7 + 15 = 22 which is saved by class item mw +2, but _all_ the other armor in the set would have to be PERFECT, so I believe, for the sake of one's sanity, that the artifice mod is best used for combatting RNG and only one piece of armor should be used to satisfy the stat requirements of the armor organization philosophy
 
+## JSON template
+
+```
+{  
+  "id": "",  
+  "satisfactory": [true, false],  
+  "class": ["w","t","h"],  
+  "slot": ["h","a","c","l","s"],  
+  "spike": ["disc","str","mob","res","rec","res/disc","rec/disc","res/str","rec/str"],  
+  "raid": ["VoG","KF","LW","GoS","DSC","Vow","RoN"],  
+}
+```
+
+- id: DIM search id (accessible from DIM beta console on click)
+- satisfactory: false if I am still looking for a better piece in this category
+- class 
+  - "w" = warlock 
+  - "t" = titan 
+  - "h" = hunter  
+- slot 
+  - "h" = helmet 
+  - "a" = arms/gauntlets/gloves 
+  - "c" = chest/torso/robes 
+  - "l" = "legs/grieves/boots" 
+  - "s" = class item (bond/mark/cloak)  
+- spike 
+  - typical philosophy per class is assumed 
+  - i.e.) hunter assumed to have disc spike, so data here represents top trinity 
+  - on warlock & titan, res & rec are assumed, so, unless a "/" is in the data field (like "res/str"), spike should be either "disc" or "str"  
+- raid: typical raid shorthand  
+
 ## raid armor
 
 armor without stat requirements (raid sets & iron banner sets) can satisfy stat requirements also
