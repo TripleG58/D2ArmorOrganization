@@ -20,6 +20,7 @@ quickly, I suppose it could allow a 23 disc / 7 str armor piece to satisfy both 
 {  
   "id": "",  
   "defecit": "disc -1, res -4, etc.",  
+  "supplements": "res +4, rec + 8, etc.",
   "class": ["w","t","h"],  
   "slot": ["h","a","c","l","s"],  
   "spike": ["disc","str","mob","res","rec","res/disc","rec/disc","res/str","rec/str"],  
@@ -29,6 +30,7 @@ quickly, I suppose it could allow a 23 disc / 7 str armor piece to satisfy both 
 
 - id: DIM search id (accessible from DIM beta console on click)
 - defecit: false if armor totally satisfies stat philosophy requirements  
+- supplements: stats that go above requirements (useful if pairing with exotic armor with deficiencies or accounting for subclass fragments)
 - class 
   - "w" = warlock 
   - "t" = titan 
