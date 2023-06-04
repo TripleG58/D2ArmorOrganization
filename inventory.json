@@ -1,0 +1,10 @@
+[
+  {
+    "id": "",
+    "satisfactory": [true, false],
+    "class": ["w","t","h"],
+    "slot": ["h","a","c","l","s"],
+    "spike": ["disc","str","mob","res","rec","res/disc","rec/disc","res/str","rec/str"],
+    "raid": ["VoG","KF","LW","GoS","DSC","Vow","RoN"],
+  }
+]
