@@ -24,7 +24,7 @@ quickly, I suppose it could allow a 23 disc / 7 str armor piece to satisfy both 
   "class": ["w","t","h"],  
   "slot": ["h","a","c","l","s"],  
   "spike": ["disc","str","mob","res","rec","res/disc","rec/disc","res/str","rec/str"],  
-  "raid": ["VoG","KF","LW","GoS","DSC","Vow","RoN"],  
+  "raid": ["VoG","KF","LW","GoS","DSC","Vow","RoN", "IB"],  
 }
 ```
 
@@ -45,7 +45,7 @@ quickly, I suppose it could allow a 23 disc / 7 str armor piece to satisfy both 
   - typical philosophy per class is assumed 
   - i.e.) hunter assumed to have disc spike, so data here represents top trinity 
   - on warlock & titan, res & rec are assumed, so, unless a "/" is in the data field (like "res/str"), spike should be either "disc" or "str"  
-- raid: typical raid shorthand  
+- raid: typical raid shorthand + iron banner  
 
 ## raid armor
 
