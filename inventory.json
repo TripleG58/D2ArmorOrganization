@@ -5,11 +5,12 @@
     "class": ["w","t","h"],
     "slot": ["h","a","c","l","s"],
     "spike": ["disc","str","mob","res","rec","res/disc","rec/disc","res/str","rec/str"],
-    "raid": ["VoG","KF","LW","GoS","DSC","Vow","RoN"],
+    "raid": ["VoG","KF","LW","GoS","DSC","Vow","RoN", "IB"],
   },
   {
     "id": "6917529792408514856",
     "defecit": "",
+    "class": "w",
     "slot": "h",
     "spike": "disc"
   },
@@ -35,11 +36,68 @@
     "spike": "res/str"
   },
   {
-    "id": "",
-    "defecit": "",
-    "class": "",
-    "slot": "",
-    "spike": ""
+    "id": "6917529892691424956",
+    "defecit": "res -1, rec -1, disc -6",
+    "class": "w",
+    "slot": "h",
+    "spike": "disc",
+    "raid": "GoS"
+  },
+  {
+    "id": "6917529242059462740",
+    "defecit": "res -10, disc -9",
+    "class": "w",
+    "slot": "h",
+    "spike": "disc",
+    "raid": "LW"
+  },
+  {
+    "id": "6917529308221957596",
+    "defecit": "rec -11, str -14",
+    "class": "w",
+    "slot": "h",
+    "spike": "str",
+    "raid": "DSC"
+  },
+  {
+    "id": "6917529884709629510",
+    "defecit": "res -1, disc -7",
+    "class": "w",
+    "slot": "h",
+    "spike": "disc",
+    "raid": "KF"
+  },
+  {
+    "id": "6917529747108582211",
+    "defecit": "res -4, rec -2, disc -13",
+    "class": "w",
+    "slot": "h",
+    "spike": "disc",
+    "raid": "Vow"
+  },
+  {
+    "id": "6917529670100368938",
+    "defecit": "res -8, disc -11",
+    "class": "w",
+    "slot": "h",
+    "spike": "disc",
+    "raid": "IB"
+  },
+  {
+    "id": "6917529442734777210",
+    "defecit": "rec -14, disc -7",
+    "class": "w",
+    "slot": "h",
+    "spike": "disc",
+    "raid": "VoG"
+  },
+  {
+    "id": "6917529784130150303",
+    "defecit": "rec -7",
+    "class": "w",
+    "slot": "g",
+    "spike": "",
+    "raid": "DSC"
   },
   {
     "id": "",
