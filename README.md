@@ -69,7 +69,7 @@ allows mix & match of double 70s in two base stats of upper trinity supplementin
 
 IDEA: maybe keep two high-res pieces (one str, one disc) to offset fragment penalties? Can be any of the 4 stat pieces, so decent RNG. (rec for titan)
 
-## warlock - 10 res & 20 rec
+## warlock - 10 res & 20 rec (ghost rec)
 - helmet
   - 23 disc
   - 23 str (niche)
@@ -134,7 +134,7 @@ IDEA: maybe keep two high-res pieces (one str, one disc) to offset fragment pena
   - legs
   - class
   
-## titan - 20 res & 10 rec
+## titan - 20 res & 10 rec (ghost res)
 - helmet
   - 23 disc 
   - 23 str
@@ -199,7 +199,7 @@ IDEA: maybe keep two high-res pieces (one str, one disc) to offset fragment pena
   - legs
   - class
 
-## hunter - 23 disc
+## hunter - 23 disc (ghost disc)
 - helmet
   - 30 mob
   - 30 res
