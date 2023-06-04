@@ -19,7 +19,7 @@ quickly, I suppose it could allow a 23 disc / 7 str armor piece to satisfy both 
 ```
 {  
   "id": "",  
-  "satisfactory": [true, false],  
+  "defecit": "disc -1, res -4, etc.",  
   "class": ["w","t","h"],  
   "slot": ["h","a","c","l","s"],  
   "spike": ["disc","str","mob","res","rec","res/disc","rec/disc","res/str","rec/str"],  
@@ -28,7 +28,7 @@ quickly, I suppose it could allow a 23 disc / 7 str armor piece to satisfy both 
 ```
 
 - id: DIM search id (accessible from DIM beta console on click)
-- satisfactory: false if I am still looking for a better piece in this category
+- defecit: false if armor totally satisfies stat philosophy requirements  
 - class 
   - "w" = warlock 
   - "t" = titan 
