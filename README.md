@@ -29,7 +29,7 @@ quickly, I suppose it could allow a 23 disc / 7 str armor piece to satisfy both 
 ```
 
 - id: DIM search id (accessible from DIM beta console on click)
-- defecit: false if armor totally satisfies stat philosophy requirements  
+- defecit: false if armor totally satisfies stat philosophy requirements (delimiters: "stat -#, stat -#, etc.")  
 - supplements: stats that go above requirements (useful if pairing with exotic armor with deficiencies or accounting for subclass fragments)
 - class 
   - "w" = warlock 
