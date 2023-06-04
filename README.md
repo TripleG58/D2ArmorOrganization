@@ -20,7 +20,7 @@ armor without stat requirements (raid sets & iron banner sets) can satisfy stat 
 
 i.e.) last wish helmet with 30 rec, 23 disc satisfies stat requirement & raid set requirement
 
-TODO: create loadouts for each class for each raid & determine max amount of armor necessary (factor in min/max for master raids)
+TODO: create loadouts for each class for each raid & determine max amount of armor necessary (factor in min/max for master raids)  
 VoG) only 2 pieces needed for VoG (oracle precision dmg multiplier)  
 KF) never used any of these mods  
 LW) taken barrier, armaments, etc.  
