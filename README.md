@@ -37,7 +37,7 @@ quickly, I suppose it could allow a 23 disc / 7 str armor piece to satisfy both 
   - "h" = helmet 
   - "a" = arms/gauntlets/gloves 
   - "c" = chest/torso/robes 
-  - "l" = "legs/grieves/boots" 
+  - "l" = legs/grieves/boots 
   - "s" = class item (bond/mark/cloak)  
 - spike 
   - typical philosophy per class is assumed 
