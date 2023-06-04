@@ -1,7 +1,7 @@
 [
   {
     "id": "",
-    "satisfactory": [true, false],
+    "defecit": "rec -4, disc -2",
     "class": ["w","t","h"],
     "slot": ["h","a","c","l","s"],
     "spike": ["disc","str","mob","res","rec","res/disc","rec/disc","res/str","rec/str"],
@@ -9,48 +9,48 @@
   },
   {
     "id": "6917529792408514856",
-    "satisfactory": true,
+    "defecit": "",
     "slot": "h",
     "spike": "disc"
   },
   {
     "id": "6917529838129949278",
-    "satisfactory": true,
+    "defecit": "res -4",
     "class": "w",
     "slot": "h",
     "spike": "res/disc"
   },
   {
     "id": "6917529798009657735",
-    "satisfactory": true,
+    "defecit": "res -1",
     "class": "w",
     "slot": "h",
     "spike": "str"
   },
   {
     "id": "6917529815399932646",
-    "satisfactory": true,
+    "defecit": "res -4",
     "class": "w",
     "slot": "h",
     "spike": "res/str"
   },
   {
     "id": "",
-    "satisfactory": false,
+    "defecit": "",
     "class": "",
     "slot": "",
     "spike": ""
   },
   {
     "id": "",
-    "satisfactory": false,
+    "defecit": "",
     "class": "",
     "slot": "",
     "spike": ""
   },
   {
     "id": "",
-    "satisfactory": false,
+    "defecit": "",
     "class": "",
     "slot": "",
     "spike": "",
