@@ -6,5 +6,54 @@
     "slot": ["h","a","c","l","s"],
     "spike": ["disc","str","mob","res","rec","res/disc","rec/disc","res/str","rec/str"],
     "raid": ["VoG","KF","LW","GoS","DSC","Vow","RoN"],
-  }
+  },
+  {
+    "id": "6917529792408514856",
+    "satisfactory": true,
+    "slot": "h",
+    "spike": "disc"
+  },
+  {
+    "id": "6917529838129949278",
+    "satisfactory": true,
+    "class": "w",
+    "slot": "h",
+    "spike": "res/disc"
+  },
+  {
+    "id": "6917529798009657735",
+    "satisfactory": true,
+    "class": "w",
+    "slot": "h",
+    "spike": "str"
+  },
+  {
+    "id": "6917529815399932646",
+    "satisfactory": true,
+    "class": "w",
+    "slot": "h",
+    "spike": "res/str"
+  },
+  {
+    "id": "",
+    "satisfactory": false,
+    "class": "",
+    "slot": "",
+    "spike": ""
+  },
+  {
+    "id": "",
+    "satisfactory": false,
+    "class": "",
+    "slot": "",
+    "spike": ""
+  },
+  {
+    "id": "",
+    "satisfactory": false,
+    "class": "",
+    "slot": "",
+    "spike": "",
+    "raid": ""
+  },
 ]
