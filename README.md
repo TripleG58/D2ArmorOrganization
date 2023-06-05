@@ -59,7 +59,7 @@ KF) never used any of these mods
 LW) taken barrier, armaments, etc.  
 GoS) how many relay defenders ideal for GoS? Feels like this raid should be vaulted  
 DSC) herd thinner nice to have, other mods meh, but maybe metah if reworked/master added?  
-Vow) master VoW, how many grenade regen mods did I use for healing nades? How many pervading darkness dmg buffs needed?  
+Vow) master Vow, how many grenade regen mods did I use for healing nades? How many pervading darkness dmg buffs needed?  
 RoN) look into doing this on master. Do raid mods help?
 
 ## pvp
