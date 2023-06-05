@@ -216,7 +216,7 @@ function parseDefecitStat(stat, obj) {
     return parseInt(split[split.indexOf(stat) + 1]);
   }
   else {
-    return -50;
+    return 999;
   }
 }
 
@@ -224,7 +224,8 @@ let w = db.filter(item => item.class === "Warlock");
 let wh = w.filter(item => item.type === "Helmet");
 // for (i of wh) {console.log(i.id);console.log("Sup: ", i.supplements);console.log("Def: ", i.defecits)}
 
-let whd = wh.filter(i=>(i.defecits.includes('disc')))
+// let whd = wh.filter(i=>(i.defecits.includes('disc')))
+let whd = wh.filter(i=>i.spike === "disc")
 whd.sort((a,b)=>{
     let diff = parseDefecitStat('disc', a) - parseDefecitStat('disc', b);
     if (diff < 0) return 1;
