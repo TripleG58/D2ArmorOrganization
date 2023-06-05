@@ -141,6 +141,7 @@ for (let i = 0; i < legend.length; ++i) {
     "defecits": "",
     "supplements": ""
   };
+  obj.id = legend[i].Id;
   obj.type = legend[i].Type; // "slot"
   obj.raid = legend[i].Source; 
   if ( obj.raid !== "vaultofglass" 
