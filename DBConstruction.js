@@ -234,6 +234,8 @@ whd.sort((a,b)=>{
 });
 for (i of whd) {console.log(i.id);console.log("Sup: ", i.supplements);console.log("Def: ", i.defecits)}
 
+// whd[0] == best disc helmet for warlock
+
 
 
 
