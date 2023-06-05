@@ -20,3 +20,7 @@ let h_mob = 30;
 let h_res = 30;
 let h_rec = 30;
 let h_disc = 23;
+
+// filter out exotics
+let legendary = structuredClone(csv);
+legend.filter(item => item.Tier === "Legendary")
