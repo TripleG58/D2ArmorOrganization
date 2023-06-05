@@ -33,3 +33,35 @@ legend = legend.filter(item => item.Type !== "Warlock Bond");
 legend = legend.filter(item => item.Type !== "Titan Mark");
 legend = legend.filter(item => item.Type !== "Hunter Cloak");
 
+// filter out junk / infuse / not tagged
+legend = legend.filter(item => item.Tag !== "junk");
+legend = legend.filter(item => item.Tag !== "infuse");
+legend = legend.filter(item => item.Tag !== "");
+
+for (let i = 0; i < legend.length; ++i) {
+  let obj = {};
+  obj.type = legend[i].Type // "slot"
+  obj.raid = legend[i].Soure 
+  if ( obj.raid !== "vaultofglass" 
+    && obj.raid !== "kingsfall"
+    && obj.raid !== "lastwish"
+    && obj.raid !== "gardenofsalvation"
+    && obj.raid !== "deepstonecrypt"
+    && obj.raid !== "vowofthedisciple"
+    && obj.raid !== "rootofnightmares"
+  ){
+    obj.raid = ""; 
+  }
+  obj.class = legend[i].Equippable
+  switch(obj.class) {
+    default:
+      break;
+    case "Warlock":
+      // compare stats and compile defecit/supplement strings and "spike"
+      break;
+    case "Titan":
+      break;
+    case "Hunter":
+      break;
+  }
+}
