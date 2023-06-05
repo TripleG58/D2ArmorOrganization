@@ -123,10 +123,10 @@ function buildDefecitsAndSupplementsWarlockAndTitan(obj, itemRes, itemRec, itemD
     }
   }
   // determine if supplementing for subclass fragments (10 stat)
-  if (obj.class === "Warlock" && res_diff >= 10) {
+  if (obj.class === "Warlock" && itemRes > itemRec) {
     obj.spike = "res/" + obj.spike;
   }
-  else if (obj.class === "Titan" && rec_diff >= 10) {
+  else if (obj.class === "Titan" && itemRec > itemRes) {
     obj.spike = "rec/" + obj.spike;
   }
 }
@@ -207,6 +207,9 @@ for (let i = 0; i < legend.length; ++i) {
 
 console.log(db);
 
+let w = db.filter(item => item.class === "Warlock");
+let wh = w.filter(item => item.type === "Helmet");
+for (i of wh) {console.log(i.id);console.log("Sup: ", i.supplements);console.log("Def: ", i.defecits)}
 
 
 
