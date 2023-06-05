@@ -215,15 +215,23 @@ function parseDefecitStat(stat, obj) {
   if (split.indexOf(stat) > -1) {
     return parseInt(split[split.indexOf(stat) + 1]);
   }
+  else {
+    return -50;
+  }
 }
 
 let w = db.filter(item => item.class === "Warlock");
 let wh = w.filter(item => item.type === "Helmet");
-for (i of wh) {console.log(i.id);console.log("Sup: ", i.supplements);console.log("Def: ", i.defecits)}
+// for (i of wh) {console.log(i.id);console.log("Sup: ", i.supplements);console.log("Def: ", i.defecits)}
 
-
-
-
+let whd = wh.filter(i=>(i.defecits.includes('disc')))
+whd.sort((a,b)=>{
+    let diff = parseDefecitStat('disc', a) - parseDefecitStat('disc', b);
+    if (diff < 0) return 1;
+    if (diff > 0) return -1;
+    if (diff == 0) return 0;
+});
+for (i of whd) {console.log(i.id);console.log("Sup: ", i.supplements);console.log("Def: ", i.defecits)}
 
 
 
