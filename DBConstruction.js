@@ -11,11 +11,29 @@ let warlock = {
     "disc": 23,
     "str": 23
   },
-  "sets": {
-    "disc": {
-      "goals": []
-    }
-  } 
+  
+//   "helmets": {
+//     "disc": {
+//       "res": warlock.goals.res,
+//       "rec": warlock.goals.rec,
+//       "disc": warlock.goals.disc
+//     },
+//     "str": {
+//       "res": warlock.goals.res,
+//       "rec": warlock.goals.rec,
+//       "str": warlock.goals.str
+//     }
+//   }
+//   "sets": {
+//     "disc": {
+//       "goals": ["res","rec","disc"],
+//       "ignore": ["str"]
+//     }
+//     "str": {
+//       "goals": ["res","rec","str"],
+//       "ignore": ["disc"]
+//     }
+//   }
 }
 
 // stat goals
