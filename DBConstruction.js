@@ -58,6 +58,9 @@ for (let i = 0; i < legend.length; ++i) {
       break;
     case "Warlock":
       // compare stats and compile defecit/supplement strings and "spike"
+      let d = legend[i]["Discipline (Base)"];
+      let s = legend[i]["Strength (Base)"];
+      obj.spike = (d >= s) ? d : s;
       break;
     case "Titan":
       break;
