@@ -207,6 +207,16 @@ for (let i = 0; i < legend.length; ++i) {
 
 console.log(db);
 
+function parseDefecitStat(stat, obj) {
+  let split = obj.defecits.split(' ');
+  for (let i = 0; i < split.length; ++i) {
+    split[i] = split[i].split(',')[0];
+  }
+  if (split.indexOf(stat) > -1) {
+    return parseInt(split[split.indexOf(stat) + 1]);
+  }
+}
+
 let w = db.filter(item => item.class === "Warlock");
 let wh = w.filter(item => item.type === "Helmet");
 for (i of wh) {console.log(i.id);console.log("Sup: ", i.supplements);console.log("Def: ", i.defecits)}
