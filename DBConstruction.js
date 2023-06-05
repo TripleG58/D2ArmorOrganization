@@ -21,6 +21,9 @@ let h_res = 30;
 let h_rec = 30;
 let h_disc = 23;
 
+// database definition
+let db = [];
+
 // filter out exotics
 let legendary = structuredClone(csv);
 legend = legend.filter(item => item.Tier === "Legendary");
