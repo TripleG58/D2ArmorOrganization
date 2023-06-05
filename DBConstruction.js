@@ -23,4 +23,10 @@ let h_disc = 23;
 
 // filter out exotics
 let legendary = structuredClone(csv);
-legend.filter(item => item.Tier === "Legendary")
+legend = legend.filter(item => item.Tier === "Legendary");
+
+// filter out class items
+legend = legend.filter(item => item.Type !== "Warlock Bond");
+legend = legend.filter(item => item.Type !== "Titan Mark");
+legend = legend.filter(item => item.Type !== "Hunter Cloak");
+
