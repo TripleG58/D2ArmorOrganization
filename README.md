@@ -19,33 +19,29 @@ quickly, I suppose it could allow a 23 disc / 7 str armor piece to satisfy both 
 ```
 {  
   "id": "",  
-  "defecit": "disc -1, res -4, etc.",  
-  "supplements": "res +4, rec + 8, etc.",
-  "class": ["w","t","h"],  
-  "slot": ["h","a","c","l","s"],  
+  "defecits": "disc -1, res -4, etc.",  
+  "supplements": "res +4, rec + 8, etc.",  
+  "class": "",  
+  "type": "",  
   "spike": ["disc","str","mob","res","rec","res/disc","rec/disc","res/str","rec/str"],  
-  "raid": ["VoG","KF","LW","GoS","DSC","Vow","RoN", "IB"],  
+  "raid": "",  
 }
 ```
 
 - id: DIM search id (accessible from DIM beta console on click)
 - defecit: false if armor totally satisfies stat philosophy requirements (delimiters: "stat -#, stat -#, etc.")  
 - supplements: stats that go above requirements (useful if pairing with exotic armor with deficiencies or accounting for subclass fragments)
-- class 
-  - "w" = warlock 
-  - "t" = titan 
-  - "h" = hunter  
-- slot 
-  - "h" = helmet 
-  - "a" = arms/gauntlets/gloves 
-  - "c" = chest/torso/robes 
-  - "l" = legs/grieves/boots 
-  - "s" = class item (bond/mark/cloak)  
+- class // changed to simply prop name in DIM export 
+- type // changed to simply prop name in DIM export 
+  - Helmet 
+  - Gauntlets
+  - Chest Armor
+  - Leg Armor
 - spike 
   - typical philosophy per class is assumed 
   - i.e.) hunter assumed to have disc spike, so data here represents top trinity 
   - on warlock & titan, res & rec are assumed, so, unless a "/" is in the data field (like "res/str"), spike should be either "disc" or "str"  
-- raid: typical raid shorthand + iron banner  
+- raid: one word lowercase + ironbanner + artifice  
 
 ## raid armor
 
