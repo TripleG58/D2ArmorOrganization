@@ -49,7 +49,7 @@ function buildDefecitsAndSupplementsHunter(obj, itemMob, itemRes, itemRec, itemD
     obj.spike = "rec";
   }
   switch(obj.spike) {
-    default;
+    default:
       break;
     case "mob":
       if (mob_diff > 0) {
