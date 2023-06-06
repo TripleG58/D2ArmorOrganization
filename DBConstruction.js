@@ -221,23 +221,48 @@ function parseDefecitStat(stat, obj) {
   }
 }
 
+let cmpStat = 'disc';
+function cmp(a,b) { 
+  let diff = parseDefecitStat(cmpStat, a) - parseDefecitStat(cmpStat, b); 
+  if (diff > 0) {
+    return 1;
+  }
+  else if (diff < 0) {
+    return -1;
+  }
+  else if (diff == 0) {
+    return 0;
+  }
+}
+
 let w = db.filter(item => item.class === "Warlock");
 let wh = w.filter(item => item.type === "Helmet");
 // for (i of wh) {console.log(i.id);console.log("Sup: ", i.supplements);console.log("Def: ", i.defecits)}
 
 // let whd = wh.filter(i=>(i.defecits.includes('disc')))
-let whd = wh.filter(i=>i.spike === "disc")
-whd.sort((a,b)=>{ parseDefecitStat('disc', a) - parseDefecitStat('disc', b); });
-for (i of whd) {console.log(i.id);console.log("Sup: ", i.supplements);console.log("Def: ", i.defecits)}
-
+let whd = wh.filter(i=>i.spike === "disc");
+cmpStat = 'disc';
+whd.sort(cmp);
+// for (i of whd) {console.log(i.id);console.log("Sup: ", i.supplements);console.log("Def: ", i.defecits)}
 // whd[0] == best disc helmet for warlock
+console.log(whd[0]);
 
+let whs = wh.filter(i=>i.spike === "str");
+cmpStat = 'str';
+whs.sort(cmp);
+console.log(whs[0]); // best str warlock helmet
 
+let wg = db.filter(item=>item.type==="Gauntlets");
 
+let wgd = wg.filter(i=>i.spike==="disc");
+cmpStat = 'disc';
+wgd.sort(cmp);
+console.log(wgd[0]);
 
-
-
-
+let wgs = wg.filter(i=>i.spike==='str');
+cmpStat='str';
+wgs.sort(cmp);
+console.log(wgs[0]);
 
 
 
