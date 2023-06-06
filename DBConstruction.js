@@ -225,10 +225,10 @@ let cmpStat = 'disc';
 function cmp(a,b) { 
   let diff = parseDefecitStat(cmpStat, a) - parseDefecitStat(cmpStat, b); 
   if (diff > 0) {
-    return 1;
+    return -1;
   }
   else if (diff < 0) {
-    return -1;
+    return 1;
   }
   else if (diff == 0) {
     return 0;
