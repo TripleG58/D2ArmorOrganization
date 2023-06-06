@@ -226,12 +226,7 @@ let wh = w.filter(item => item.type === "Helmet");
 
 // let whd = wh.filter(i=>(i.defecits.includes('disc')))
 let whd = wh.filter(i=>i.spike === "disc")
-whd.sort((a,b)=>{
-    let diff = parseDefecitStat('disc', a) - parseDefecitStat('disc', b);
-    if (diff < 0) return 1;
-    if (diff > 0) return -1;
-    if (diff == 0) return 0;
-});
+whd.sort((a,b)=>{ parseDefecitStat('disc', a) - parseDefecitStat('disc', b); });
 for (i of whd) {console.log(i.id);console.log("Sup: ", i.supplements);console.log("Def: ", i.defecits)}
 
 // whd[0] == best disc helmet for warlock
