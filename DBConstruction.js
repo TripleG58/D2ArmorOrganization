@@ -212,8 +212,9 @@ function parseDefecitStat(stat, obj) {
   for (let i = 0; i < split.length; ++i) {
     split[i] = split[i].split(',')[0];
   }
-  if (split.indexOf(stat) > -1) {
-    return parseInt(split[split.indexOf(stat) + 1]);
+  let index = split.indexOf(stat);
+  if (index > -1) {
+    return parseInt(split[index + 1]);
   }
   else {
     return 999;
