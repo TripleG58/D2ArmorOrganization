@@ -271,14 +271,57 @@ console.log(wgs[0]);
 
 
 
+////////////////////////////////////////////////////////////////////////////////////////////// 2nd attempt
 
 
+console.log(dim);
 
+// filter out exotics
+let legendaries = structuredClone(dim).filter(item => item.Tier === "Legendary");
 
+// filter out class items
+legendaries = legendaries.filter(item => item.Type !== "Warlock Bond");
+legendaries = legendaries.filter(item => item.Type !== "Titan Mark");
+legendaries = legendaries.filter(item => item.Type !== "Hunter Cloak");
 
+// filter out junk / infuse / not tagged
+legendaries = legendaries.filter(item => item.Tag !== "junk");
+legendaries = legendaries.filter(item => item.Tag !== "infuse");
+legendaries = legendaries.filter(item => item.Tag !== "");
 
+console.log(legendaries);
 
+let warlock = structuredClone(legendaries);
+warlock = warlock.filter(item => item.Equippable === "Warlock");
+// let titan = legendaries.filter(item => item.class === "Titan");
+// let hunter = legendaries.filter(item => item.class === "Hunter");
 
+console.log(warlock);
 
+function presortW(res,rec,other) {
+   let resGoal = 10;
+   let recGoal = 20;
+   let otherGoal = 22;
+   let ret = 0;
+   if (other < otherGoal) {
+      ret += otherGoal - other;
+   }
+   if (res < resGoal) {
+      ret += resGoal - res;
+   }
+   if (rec < recGoal) {
+      ret += recGoal - rec;
+   }
+   return ret;
+}
 
-
+let warlockHelmets = structuredClone(warlock).filter(item=>item.Type === "Helmet");
+for (let item of warlockHelmets) {
+   item.discDefecits = presortW(
+      item["Resilience (Base)"],
+      item["Recovery (Base)"],
+      item["Discipline (Base)"]
+   );
+}
+warlockHelmets.sort((a,b)=>a.discDefecits-b.discDefecits);
+console.log(warlockHelmets);
