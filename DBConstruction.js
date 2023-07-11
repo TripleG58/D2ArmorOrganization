@@ -325,3 +325,6 @@ for (let item of warlockHelmets) {
 }
 warlockHelmets.sort((a,b)=>a.discDefecits-b.discDefecits);
 console.log(warlockHelmets);
+for (let i = 0; i < warlockHelmets.length; ++i) {
+   console.log(warlockHelmets[i].Id, warlockHelmets[i].discDefecits);
+}
