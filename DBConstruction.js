@@ -336,6 +336,7 @@ dimQueryStr += " id:" + warlockHelmets[0].Id + " or";
 for (let i = 1; i < warlockHelmets.length && warlockHelmets[i].discSetDefecits == warlockHelmets[i-1].discSetDefecits; ++i) {
    dimQueryStr += " id:" + warlockHelmets[i].Id + " or";
 }
+console.log("Helmets");
 for (let i=0; i < warlockHelmets.length; ++i) {
    console.log(warlockHelmets[i].Id, warlockHelmets[i].discSetDefecits);
 }
@@ -348,12 +349,20 @@ for (let item of warlockArms) {
       item["Recovery (Base)"],
       item["Discipline (Base)"]
    );
+   // if item is artifice armor, decrease defecits by -3, then, if <0, set to 0
+   if (item["Seasonal Mod"] === "artifice") {
+      item.discSetDefecits -= 3;
+      if (item.discSetDefecits < 0) {
+         item.discSetDefecits = 0;
+      }
+   }
 }
 warlockArms.sort((a,b)=>a.discSetDefecits-b.discSetDefecits);
 dimQueryStr += " id:" + warlockArms[0].Id + " or";
 for (let i = 1; i < warlockArms.length && warlockArms[i].discSetDefecits == warlockArms[i-1].discSetDefecits; ++i) {
    dimQueryStr += " id:" + warlockArms[i].Id + " or";
 }
+console.log("Arms");
 for (let i=0; i < warlockArms.length; ++i) {
    console.log(warlockArms[i].Id, warlockArms[i].discSetDefecits);
 }
@@ -366,12 +375,20 @@ for (let item of warlockChest) {
       item["Recovery (Base)"],
       item["Discipline (Base)"]
    );
+   // if item is artifice armor, decrease defecits by -3, then, if <0, set to 0
+   if (item["Seasonal Mod"] === "artifice") {
+      item.discSetDefecits -= 3;
+      if (item.discSetDefecits < 0) {
+         item.discSetDefecits = 0;
+      }
+   }
 }
 warlockChest.sort((a,b)=>a.discSetDefecits-b.discSetDefecits);
 dimQueryStr += " id:" + warlockChest[0].Id + " or";
 for (let i = 1; i < warlockChest.length && warlockChest[i].discSetDefecits == warlockChest[i-1].discSetDefecits; ++i) {
    dimQueryStr += " id:" + warlockChest[i].Id + " or";
 }
+console.log("Chest Armor");
 for (let i=0; i < warlockChest.length; ++i) {
    console.log(warlockChest[i].Id, warlockChest[i].discSetDefecits);
 }
@@ -384,12 +401,20 @@ for (let item of warlockLegs) {
       item["Recovery (Base)"],
       item["Discipline (Base)"]
    );
+   // if item is artifice armor, decrease defecits by -3, then, if <0, set to 0
+   if (item["Seasonal Mod"] === "artifice") {
+      item.discSetDefecits -= 3;
+      if (item.discSetDefecits < 0) {
+         item.discSetDefecits = 0;
+      }
+   }
 }
 warlockLegs.sort((a,b)=>a.discSetDefecits-b.discSetDefecits);
 dimQueryStr += " id:" + warlockLegs[0].Id + " or";
 for (let i = 1; i < warlockLegs.length && warlockLegs[i].discSetDefecits == warlockLegs[i-1].discSetDefecits; ++i) {
    dimQueryStr += " id:" + warlockLegs[i].Id + " or";
 }
+console.log("Legs");
 for (let i=0; i < warlockLegs.length; ++i) {
    console.log(warlockLegs[i].Id, warlockLegs[i].discSetDefecits);
 }
@@ -401,5 +426,4 @@ dimQueryStr += " basestat:total:>100";
 
 console.log(dimQueryStr);
 console.log("Total Disc-set defecits:", totalDiscDefecit);
-
 
