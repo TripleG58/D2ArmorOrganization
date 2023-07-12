@@ -323,6 +323,13 @@ for (let item of warlockHelmets) {
       item["Recovery (Base)"],
       item["Discipline (Base)"]
    );
+   // if item is artifice armor, decrease defecits by -3, then, if <0, set to 0
+   if (item["Seasonal Mod"] === "artifice") {
+      item.discSetDefecits -= 3;
+      if (item.discSetDefecits < 0) {
+         item.discSetDefecits = 0;
+      }
+   }
 }
 warlockHelmets.sort((a,b)=>a.discSetDefecits-b.discSetDefecits);
 dimQueryStr += " id:" + warlockHelmets[0].Id + " or";
