@@ -273,8 +273,8 @@ console.log(wgs[0]);
 
 ////////////////////////////////////////////////////////////////////////////////////////////// 2nd attempt
 
-
-console.log(dim);
+let dimQueryStr = "";
+// console.log(dim);
 
 // filter out exotics
 let legendaries = structuredClone(dim).filter(item => item.Tier === "Legendary");
@@ -289,14 +289,14 @@ legendaries = legendaries.filter(item => item.Tag !== "junk");
 legendaries = legendaries.filter(item => item.Tag !== "infuse");
 legendaries = legendaries.filter(item => item.Tag !== "");
 
-console.log(legendaries);
+// console.log(legendaries);
 
 let warlock = structuredClone(legendaries);
 warlock = warlock.filter(item => item.Equippable === "Warlock");
 // let titan = legendaries.filter(item => item.class === "Titan");
 // let hunter = legendaries.filter(item => item.class === "Hunter");
 
-console.log(warlock);
+// console.log(warlock);
 
 function presortW(res,rec,other) {
    let resGoal = 10;
@@ -317,14 +317,34 @@ function presortW(res,rec,other) {
 
 let warlockHelmets = structuredClone(warlock).filter(item=>item.Type === "Helmet");
 for (let item of warlockHelmets) {
-   item.discDefecits = presortW(
+   item.discSetDefecits = presortW(
       item["Resilience (Base)"],
       item["Recovery (Base)"],
       item["Discipline (Base)"]
    );
 }
-warlockHelmets.sort((a,b)=>a.discDefecits-b.discDefecits);
-console.log(warlockHelmets);
-for (let i = 0; i < warlockHelmets.length; ++i) {
-   console.log(warlockHelmets[i].Id, warlockHelmets[i].discDefecits);
+warlockHelmets.sort((a,b)=>a.discSetDefecits-b.discSetDefecits);
+dimQueryStr += " id:" + warlockHelmets[0].Id + " or";
+for (let i = 1; i < warlockHelmets.length && warlockHelmets[i].discSetDefecits > warlockHelmets[i-1].discSetDefecits; ++i) {
+   dimQueryStr += " id:" + warlockHelmets[i].Id + " or";
 }
+
+let warlockArms = structuredClone(warlock).filter(item=>item.Type === "Gauntlets");
+for (let item of warlockArms) {
+   item.discSetDefecits = presortW(
+      item["Resilience (Base)"],
+      item["Recovery (Base)"],
+      item["Discipline (Base)"]
+   );
+}
+warlockArms.sort((a,b)=>a.discSetDefecits-b.discSetDefecits);
+dimQueryStr += " id:" + warlockArms[0].Id + " or";
+for (let i = 1; i < warlockArms.length && warlockArms[i].discSetDefecits > warlockArms[i-1].discSetDefecits; ++i) {
+   dimQueryStr += " id:" + warlockArms[i].Id + " or";
+}
+
+// terminator condition (doesn't evaluate to true for any item 
+// - serves solely to validate syntax)
+dimQueryStr += " basestat:total:>100";
+
+console.log(dimQueryStr);
