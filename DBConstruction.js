@@ -272,7 +272,6 @@ console.log(wgs[0]);
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////// 2nd attempt
-
 let dimQueryStr = "";
 // console.log(dim);
 
@@ -315,6 +314,8 @@ function presortW(res,rec,other) {
    return ret;
 }
 
+let totalDiscDefecit = 0;
+
 let warlockHelmets = structuredClone(warlock).filter(item=>item.Type === "Helmet");
 for (let item of warlockHelmets) {
    item.discSetDefecits = presortW(
@@ -325,9 +326,13 @@ for (let item of warlockHelmets) {
 }
 warlockHelmets.sort((a,b)=>a.discSetDefecits-b.discSetDefecits);
 dimQueryStr += " id:" + warlockHelmets[0].Id + " or";
-for (let i = 1; i < warlockHelmets.length && warlockHelmets[i].discSetDefecits > warlockHelmets[i-1].discSetDefecits; ++i) {
+for (let i = 1; i < warlockHelmets.length && warlockHelmets[i].discSetDefecits == warlockHelmets[i-1].discSetDefecits; ++i) {
    dimQueryStr += " id:" + warlockHelmets[i].Id + " or";
 }
+for (let i=0; i < warlockHelmets.length; ++i) {
+   console.log(warlockHelmets[i].Id, warlockHelmets[i].discSetDefecits);
+}
+totalDiscDefecit += warlockHelmets[0].discSetDefecits;
 
 let warlockArms = structuredClone(warlock).filter(item=>item.Type === "Gauntlets");
 for (let item of warlockArms) {
@@ -339,12 +344,55 @@ for (let item of warlockArms) {
 }
 warlockArms.sort((a,b)=>a.discSetDefecits-b.discSetDefecits);
 dimQueryStr += " id:" + warlockArms[0].Id + " or";
-for (let i = 1; i < warlockArms.length && warlockArms[i].discSetDefecits > warlockArms[i-1].discSetDefecits; ++i) {
+for (let i = 1; i < warlockArms.length && warlockArms[i].discSetDefecits == warlockArms[i-1].discSetDefecits; ++i) {
    dimQueryStr += " id:" + warlockArms[i].Id + " or";
 }
+for (let i=0; i < warlockArms.length; ++i) {
+   console.log(warlockArms[i].Id, warlockArms[i].discSetDefecits);
+}
+totalDiscDefecit += warlockArms[0].discSetDefecits;
+
+let warlockChest = structuredClone(warlock).filter(item=>item.Type === "Chest Armor");
+for (let item of warlockChest) {
+   item.discSetDefecits = presortW(
+      item["Resilience (Base)"],
+      item["Recovery (Base)"],
+      item["Discipline (Base)"]
+   );
+}
+warlockChest.sort((a,b)=>a.discSetDefecits-b.discSetDefecits);
+dimQueryStr += " id:" + warlockChest[0].Id + " or";
+for (let i = 1; i < warlockChest.length && warlockChest[i].discSetDefecits == warlockChest[i-1].discSetDefecits; ++i) {
+   dimQueryStr += " id:" + warlockChest[i].Id + " or";
+}
+for (let i=0; i < warlockChest.length; ++i) {
+   console.log(warlockChest[i].Id, warlockChest[i].discSetDefecits);
+}
+totalDiscDefecit += warlockChest[0].discSetDefecits;
+
+let warlockLegs = structuredClone(warlock).filter(item=>item.Type === "Leg Armor");
+for (let item of warlockLegs) {
+   item.discSetDefecits = presortW(
+      item["Resilience (Base)"],
+      item["Recovery (Base)"],
+      item["Discipline (Base)"]
+   );
+}
+warlockLegs.sort((a,b)=>a.discSetDefecits-b.discSetDefecits);
+dimQueryStr += " id:" + warlockLegs[0].Id + " or";
+for (let i = 1; i < warlockLegs.length && warlockLegs[i].discSetDefecits == warlockLegs[i-1].discSetDefecits; ++i) {
+   dimQueryStr += " id:" + warlockLegs[i].Id + " or";
+}
+for (let i=0; i < warlockLegs.length; ++i) {
+   console.log(warlockLegs[i].Id, warlockLegs[i].discSetDefecits);
+}
+totalDiscDefecit += warlockLegs[0].discSetDefecits;
 
 // terminator condition (doesn't evaluate to true for any item 
 // - serves solely to validate syntax)
 dimQueryStr += " basestat:total:>100";
 
 console.log(dimQueryStr);
+console.log("Total Disc-set defecits:", totalDiscDefecit);
+
+
